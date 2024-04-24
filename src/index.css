@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Lato', sans-serif;
+
+  background-color: rgba(0, 0, 0, 0.03);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  width: 100vw;
+  height: 100vh;
+
+  /* tailwind css syntax */
+  @apply flex flex-col items-center text-gray-700;
+}
+
+#root {
+  /* width full but has max width */
+  @apply w-full max-w-screen-2xl;
+}
