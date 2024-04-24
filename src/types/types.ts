@@ -9,10 +9,11 @@ export type ItemDetail = {
   price: number;
   quantity: number;
 };
-type Seller = {
+export type Seller = {
   id: string;
   storeName: string;
   description: string;
   avatarSrc: string;
 };
-export type SellerInfo = { key: string; value: Seller };
+
+export type Sellers = { [key: string]: Seller };

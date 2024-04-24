@@ -1,19 +1,19 @@
-import { ItemDetail, Seller } from './types/types';
+import { ItemDetail, Sellers } from './types/types';
 
-export const sellers: Seller[] = [
-  {
+export const sellers: Sellers = {
+  alice: {
     id: 'alice',
     storeName: "Alice's Fruit Store",
     description: "Fruits n' stuff",
-    avatarSrc: '/assets/alice.jpg',
+    avatarSrc: '/images/alice.jpg',
   },
-  {
+  bob: {
     id: 'bob',
     storeName: 'Fruit Bazaar, by Bob',
     description: 'Imported fruit from across the world!',
-    avatarSrc: '/assets/bob.jpg',
+    avatarSrc: '/images/bob.jpg',
   },
-];
+};
 
 export const items: ItemDetail[] = [
   {
@@ -28,6 +28,7 @@ export const items: ItemDetail[] = [
     price: 8,
     quantity: 2,
   },
+
   {
     id: 'b',
     name: 'Banana',
