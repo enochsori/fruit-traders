@@ -3,6 +3,11 @@
 ---
 
 In this workshop, I built an online fruit store, with different items being sold by different sellers.
+It is only focused in client side.
+
+- React
+- Typescript
+- Tailwind CSS
 
 ### Homepage:
 
