@@ -26,7 +26,7 @@ export default function ItemDetail() {
         alt={`${name} image`}
         className='lg:h-96 rounded-xl'
       />
-      <div className='h-40 lg:h-96 text-lg flex flex-col justify-between items-center'>
+      <div className='h-40 lg:h-96 text-lg flex flex-col items-center lg:items-start'>
         <p className='text-4xl font-extrabold '>{name}</p>
         <p className='text-gray-400 font-bold text-lg mb-4 italic'>
           {latinName}
