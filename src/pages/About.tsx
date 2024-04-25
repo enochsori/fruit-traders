@@ -23,11 +23,11 @@ export default function About() {
         exquisite taste of premium fruits, delivered right to your doorstep.
       </p>
       <h1 className='mt-10 font-bold text-xl'>Our sellers :</h1>
-      <section className='flex justify-around'>
+      <section className='flex justify-around flex-col md:flex-row'>
         {Object.values(sellers).map((seller, index) => (
           <article
             key={index}
-            className='flex flex-col justify-center items-center'
+            className='flex flex-col justify-center items-center mb-8 md:mb-0'
           >
             <img
               src={seller.avatarSrc}
