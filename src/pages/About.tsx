@@ -1,10 +1,12 @@
+import { sellers } from '../data';
+
 export default function About() {
   return (
-    <>
-      <p className='font-bold text-xl text-gray-700 mb-2'>
+    <div className='px-20 md:px-6 lg:px-4'>
+      <h1 className='font-bold text-xl text-gray-700 mb-2'>
         Fruit emporium is founded on a very simple principle:
         <b> Fruit is good.</b>
-      </p>
+      </h1>
       <img
         src='/images/bg-about.jpg'
         alt='fruits image'
@@ -20,6 +22,25 @@ export default function About() {
         esteemed Asian markets. Explore our virtual aisles and indulge in the
         exquisite taste of premium fruits, delivered right to your doorstep.
       </p>
-    </>
+      <h1 className='mt-10 font-bold text-xl'>Our sellers :</h1>
+      <section className='flex justify-around'>
+        {Object.values(sellers).map((seller, index) => (
+          <article
+            key={index}
+            className='flex flex-col justify-center items-center'
+          >
+            <img
+              src={seller.avatarSrc}
+              alt={`${seller.id} avartar image`}
+              className='w-80 rounded-full'
+            />
+            <p className='font-bold mt-4'>
+              {`${seller.id.toUpperCase()}, in ${seller.storeName}`}
+            </p>
+            <span>{seller.description}</span>
+          </article>
+        ))}
+      </section>
+    </div>
   );
 }

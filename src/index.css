@@ -16,6 +16,9 @@ body {
   /* tailwind css syntax */
   @apply flex flex-col items-center text-gray-700;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 #root {
   /* width full but has max width */

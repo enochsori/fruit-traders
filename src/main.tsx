@@ -8,6 +8,7 @@ import NotFound from './pages/NotFound.tsx';
 import Home from './pages/Home.tsx';
 import About from './pages/About.tsx';
 import ItemDetail from './pages/ItemDetail.tsx';
+import Confirmation from './pages/Confirmation.tsx';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: '/:itemId',
         element: <ItemDetail />,
+      },
+      {
+        path: '/confirm',
+        element: <Confirmation />,
       },
     ],
   },

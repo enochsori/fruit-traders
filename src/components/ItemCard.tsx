@@ -14,7 +14,7 @@ export default function ItemCard({ item }: Props) {
 
   return (
     <li
-      className='bg-white flex flex-col justify-center items-center rounded-2xl p-5 text-black shadow-2xl cursor-pointer hover:opacity-80'
+      className='bg-white flex flex-col justify-center items-center rounded-2xl p-5 text-black shadow-2xl cursor-pointer hover:opacity-80 mb-14'
       onClick={handleOnClick}
     >
       <img
